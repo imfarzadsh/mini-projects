@@ -1,20 +1,17 @@
-x = input()
-
-y = eval(x)
-
+playersInfo = eval(input())
 
 all25 = []
-for i in range( 0 , len(y) ) :
-    if int(y[i]['age']) < 25 :
-        all25.append(y[i]['club'])
+for i in range( 0 , len(playersInfo) ) :
+    if int(playersInfo[i]['age']) < 25 :
+        all25.append(playersInfo[i]['club'])
 
 # print(all25)
 
 nameList = []
 countList = []
-for i in range( 0 , len(y) ) :
-    nameList.append(y[i]['club'] )
-    countList.append(all25.count(y[i]['club'])) 
+for i in range( 0 , len(playersInfo) ) :
+    nameList.append(playersInfo[i]['club'] )
+    countList.append(all25.count(playersInfo[i]['club'])) 
 
 # print(countList)
 # print(nameList)
@@ -41,8 +38,8 @@ else :
     fine += ' for producing high quality young players.'
 
 all = []
-for i in range(0 , len(y)) :
-    all.append(y[i]['club'])
+for i in range(0 , len(playersInfo)) :
+    all.append(playersInfo[i]['club'])
 
 print(all)
 print(fine)
