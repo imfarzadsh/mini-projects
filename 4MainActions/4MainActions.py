@@ -1,4 +1,5 @@
 x = input()
+
 for i in x :
     if i == '+' : 
         num = x.split('+')
